@@ -1,4 +1,6 @@
 *** API test cases ***
+Public API :  https://api.publicapis.org
+
 Test cases for /entries GET end point
 Validate  response  codes
 
