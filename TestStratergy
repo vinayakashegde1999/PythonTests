@@ -19,9 +19,9 @@ methodology and process and if necessary make adjustments to improve the process
 
 Once there is understanding of nature of the team and product , We need to define the definition of testing that expands to
 Functional testing which includes various types of testing with respect to API and UI.
-To achieve more test coverage in Unit/Integration test with covering test scenarios in Isolated/individual  API's
+To achieve more test coverage we need  Unit/Integration test with covering test scenarios in Isolated/individual  API's
 and then focus on UI test cases for the business criticality and UI Compatibility.
-Also we need to define the  definition on Functional Test, Unit Test, Integration Test
+Also we need to define the  definition on Functional Test, Unit Test, Integration Test for build release process
 
 
 2.Which process would you establish around testing new functionality ? How would you want the features to be tested?

@@ -13,6 +13,8 @@ robotframework version: 3.1.2
 
 pytest version 5.4.1
 
+pytest-html 2.1.1
+
 robotframework-seleniumlibrary version: 4.3.0
 
 robotframework-requests  0.6.5
@@ -67,9 +69,12 @@ https://docs.pytest.org/en/latest/
   Below folder holds the the test scripts written in Pytest  foramework
   `PyTest`
    To run the API tests please run the below run command in the terminal 
+   
   `pytest`
   Above commands prints the result overview on the terminal
   
+  `pytest --html=results/Pytstreport.html `
+   To get the results in html format run above command this required to be  install pytest-html ->  `pip install pytest-html` 
   
  
    

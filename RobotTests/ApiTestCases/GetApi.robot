@@ -3,14 +3,13 @@ Library  RequestsLibrary
 Library  Collections
 Library  JSONLibrary
 
-
 *** Variables ***
 ${base_url}  https://api.publicapis.org
 ${category}  Animals
 ${requestUri}  /entries?
 
 *** Test Cases ***
-validate sucess response Get All the matching category
+validate sucess response for Get endpoint and all the matching category should hold same value as passed.
       create session   mysession   ${base_url}
       ${param}  create dictionary  category=${category}
       ${response}=  get request  mysession  ${requestUri}  params=${param}

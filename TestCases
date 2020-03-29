@@ -1,22 +1,41 @@
 *** API test cases ***
-
 Test cases for /entries GET end point
 Validate  response  codes
 
 # Positive Scenario:
- when passed valid query Paramter with valid value should return status code 200
- When  No query paramters are sent then should return status code 200
+ when passed valid query parameter with valid value should return status code 200
+ When  No query parameters are sent then should return status code 200
 
- Negative Scenario:
+#  Negative Scenario:
  when passed Invalid query parameter should return status code 400
 
- Validate Response body
- When Queryparametre coantais   Category then response should only contains the  category passed.
+#  Validate Response body
+ When query parameter contains category then response should only contains the  category passed.
 
- Valdiate Response Headers
- when passed valid queryParamter with valid value should return access-control-allow-origin: * , content-type: application/json
+#  Validate Response Headers
+ when passed valid query parameter with valid value should return access-control-allow-origin: * , content-type: application/json
 
   Should return 200 response with valid parameters
   Should throw error when passed invalid query parameters
   Should return proper JSON response body when passed valid category
   Should have valid response headers
+
+
+
+ *** UI Test cases ***
+ Tests: Test Search functionality On https://www.google.de/
+ Test Cases:
+   Verify Search filed accept input values
+   Verify Google Search button visible and able to click on page load
+   Verify if user not enter any input values on search filed then there should be no action performed
+
+   Verify Auto Suggestion lists showed when user entering the input values and should display only the matching characters
+   Test Data (comma separated) :
+    A ,  1, 1...n(maximum lenght) ,  Test123@#@$(Alpha numnberic) , Special characters ...
+
+   Verify Google search button displays results on results page when users enters  values in search fields  and click on Google Search button.
+
+
+   Automated below scenario in robot framework
+      Verify Google search button displays results on results page when users enters  values in search fields  and click on Google Search button.
+
