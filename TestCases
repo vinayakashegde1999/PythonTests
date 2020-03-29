@@ -1,0 +1,19 @@
+Test cases for /entries GET end point
+Validate  Response codes
+# Positive Scenario:
+ when passed valid queryParamter with valid value should return status code 200
+ When  No query paramters are sent then should return status code 200
+
+ Negative Scenario:
+ when passed Invalid query parameter should return status code 400
+
+ Validate Response body
+ When Queryparametre coantais   Category then response should only contains the  category passed.
+
+ Valdiate Response Headers
+ when passed valid queryParamter with valid value should return access-control-allow-origin: * , content-type: application/json
+
+  Should return 200 response with valid parameters
+  Should throw error when passed invalid query parameters
+  Should return proper JSON response body when passed valid category
+  Should have valid response headers

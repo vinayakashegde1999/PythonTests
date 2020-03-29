@@ -1,0 +1,60 @@
+Imagine the following situation: You need to establish a QA process in a cross-functional team.
+The team builds a front-end application using REST API's
+
+1.Where would you start ? what would be your first steps?
+Answer:
+
+The main aim of having a Quality Assurance process is to ensure that the right product is built right, the first time.
+That means, we need to ensure that the requirements are correctly defined and the development team have a solid understanding
+of the functionality of new features before starting to code.
+
+It is important to note that testing is not a phase, it’s an activity and that testing starts
+from the very beginning of the development process, right from when the user stories are written.
+
+Testing should support development and so testing activities are in parallel to
+the development activities, and at every stage of the development process we need to ensure that the code is thoroughly tested.
+
+Before implementing a testing process, we need to know the current development
+methodology and process and if necessary make adjustments to improve the process.
+
+Once there is understanding of nature of the team and product , We need to define the definition of testing that expands to
+Functional testing which includes various types of testing with respect to API and UI.
+To achieve more test coverage in Unit/Integration test with covering test scenarios in Isolated/individual  API's
+and then focus on UI test cases for the business criticality and UI Compatibility.
+Also we need to define the  definition on Functional Test, Unit Test, Integration Test
+
+
+2.Which process would you establish around testing new functionality ? How would you want the features to be tested?
+Answer:
+
+Before Picking the build to be tested we need to understand the requirement and its necessesity in the current state of product.
+We need to be ready with Test plan / test stratergy with respect to new functionality before we appraoch the testing
+Ensure the implemented functionality is not breaking the exisitng funcitonality and not blocking any other dependeint system / team. By running regression / impact regression / Smoke test for build readiness.
+Ensure All tests / Acceptance test are executed with all the possible test data
+Ensure All the bugs are closed
+Ensure Exploratory testing is finished
+Ensure Non Functional testing like Performance testing & Secureity tesitng  completed (use of static code analysis or any bug  scanner)
+
+
+
+3. If you would do test automation which techniques or best practise would you use?
+Answer:
+
+I would recommend Test early stratergy when we work with Agile and Fast paced environment. i.e QA and Dev team need to be work closely and eitehr of the
+team need to be flexible to look and expand the test autoamtion easily and comfirtaabley when it requires.
+Considering the above gole
+A. Test team able to Test the the fucntiolity locally (able to set up  the dev env locally) so the Auomation script can have the implementation logic before the
+Business logic in test automation script
+
+B.Test automation script should be Flexible for the change and more understandable to cross functional teams, hence Automaion suits should have abstraction layes to Business logic,
+ Implementaion logics and  Test data if its UI tests the Page objects or DOM identification stratergy shouldbe separated
+C. Test Automation scenarios should have capability run the test suits based on the functionality so can be cherrypicked with respect to Regression stratergy like Impcat regression/Smoke tests
+D. Should be Well documented and Reports should be more user friendly or fucntioanlity with Messaging channels
+E. Should be flexible to handle the Flaky tests or re running fucntionality if there is a intermiitent failuers
+F. Should be Part of build pipeline(CI/CD) this way we can have more fast and often release to live
+G. Autoamtion Test suit should have the capbility to support Feature flag / Dial approach(implemented code hidden to Users but this wont block dev team to continue working and wont stop the test team to test the feature)
+ where Dev code can go live
+H.Will be good to understand if there is a dependency from third party / upstream clients for test data so  should have Mock/stub stratergy
+
+
+
