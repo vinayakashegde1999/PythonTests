@@ -1,7 +1,10 @@
+*** API test cases ***
+
 Test cases for /entries GET end point
-Validate  Response codes
+Validate  response  codes
+
 # Positive Scenario:
- when passed valid queryParamter with valid value should return status code 200
+ when passed valid query Paramter with valid value should return status code 200
  When  No query paramters are sent then should return status code 200
 
  Negative Scenario:
